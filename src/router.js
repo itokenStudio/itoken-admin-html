@@ -7,10 +7,17 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
+    // 后台主页面login
     {
       path: '/',
-      name: 'home',
-      component: () => import('./views/Home.vue')
+      name: 'primarySurface',
+      component: () => import('./views/backstage/primarySurface.vue')
+    },
+    // 后台管理页面
+    {
+      path: '/admin',
+      name: 'admin',
+      component: () => import('./views/backstage/admin.vue')
     }
   ]
 })

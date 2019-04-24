@@ -1,14 +1,15 @@
 <template>
   <div class="home">
-     <login></login>
+     asdasdasasdasd我我我
   </div>
 </template>
 
 <script>
+
 export default {
+  name:'tableList',
   data() {
     return {
-      radio: "1"
     };
   }
 };
